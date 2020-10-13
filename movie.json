@@ -1,0 +1,50 @@
+[
+    {
+    "id":1,
+    "name":"The Truman Show",
+    "theme":"Comedy, Drama, Sci-Fi",
+    "rating":"8.1"
+    },
+    {
+    "id":2,
+    "name":"The Dark Knight",
+    "theme":"Action, Crime, Drama",
+    "rating":"9.0"
+    },
+    {
+    "id":3,
+    "name":"The Lord of the Rings: The Return of the King",
+    "theme":"Action, Adventure, Drama",
+    "rating":"8.9"
+    },
+    {
+    "id":4,
+    "name":"The Lord of the Rings: The Fellowship of the Ring",
+    "theme":"Action, Adventure, Drama ",
+    "rating":"8.8"
+    },
+    {
+    "id":5,
+    "name":"The Matrix ",
+    "theme":"Action, Sci-Fi ",
+    "rating":"8.6"
+    },
+    {
+    "id":6,
+    "name":"Life Is Beautiful",
+    "theme":"Comedy, Drama, Romance",
+    "rating":"8.6"
+    },
+    {
+    "id":7,
+    "name":"The Usual Suspects",
+    "theme":"Crime, Mystery, Thriller",
+    "rating":"8.5"
+    },
+    {
+    "id":8,
+    "name":"Good Will Hunting",
+    "theme":"Drama, Romance",
+    "rating":"8.3"
+    }
+]
