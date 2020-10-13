@@ -1,0 +1,117 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+<!-- <a routerLink="home" routerLinkActive="active">Home</a>
+<a routerLink="theatre" >Theatre</a>
+<a routerLink="movies" >Movies</a> -->
+
+
+
+<!-- <app-employee></app-employee>
+
+<div class="container3">
+
+  <div class="text-center">
+  
+<div class="navbar">
+  <a routerLink="home" routerLinkActive="active">Home</a>
+  <a routerLink="movies" routerLinkActive="active">News</a>
+  <div class="dropdown">
+    <button class="dropbtn" routerLink="theatre" >Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <app-theatre></app-theatre>
+  </div> 
+</div>
+</div>
+</div>
+
+<div class="container3" >
+<div class="text-center">
+
+<h2>Reading from json file through http service</h2> 
+
+  <h4 style="padding-left:30px ;"> Table </h4>
+<table class="table table-bordered table-hover table-dark center" >
+  <tr style="font-size: 20px;"class="text-center">
+    <th>ID</th>
+    <th>Name</th>
+    <th>Arrival</th>
+    <th>Departure</th>
+  </tr>
+  <tr *ngFor="let book1 of Books" style="font-size: 20px;" class="text-center">
+    <td>{{book1.id}}</td>
+    <td>{{book1.name}}</td>
+    <td>{{book1.arrival}}</td>
+    <td>{{book1.departure}} </td>
+
+  </tr>
+</table>
+</div>
+</div><br><br>
+<div class="container3" >
+<div class="text-center">
+  <h4 style="font-size: 20px;">Enter Movie Name to Search</h4>
+<input type="text" [(ngModel)]="name" (input)="Search()" placeholder="Enter Movie Name"style="font-size: 20px;">
+<table class="table table-bordered table-hover table-dark center" >
+  <tr style="font-size: 20px;"class="text-center">
+    <th>Movie ID</th>
+    <th>Movie Name</th>
+    <th>Theme</th>
+    <th>IMDB Rating</th>
+  </tr>
+  <tr *ngFor="let book1 of movie_Books" style="font-size: 20px;" class="text-center">
+    <td>{{book1.id}}</td>
+    <td>{{book1.name}}</td>
+    <td>{{book1.theme}}</td>
+    <td>{{book1.rating}} </td>
+
+  </tr>
+</table>
+</div>
+</div> -->
+<style>
+  @media screen  and (max-width: 500px){
+    .header a{
+    float: none;
+    display: block;
+    text-align:left;
+
+  }
+  .header-right{
+    float:none;
+  }
+    
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+</style>
+
+<div class="header">
+  <a href="#" class="logo"> Assignment </a>
+  <div class="header-right">
+  <a [routerLink]="['/employee', x]">Employee</a> &nbsp;&nbsp;&nbsp;
+  <div class="dropdown">
+    <button class="dropbtn">Product</button>
+    <div class="dropdown-content">
+      <a routerLink="car" >Cars</a>
+      <a routerLink="elec" >Electronics</a>
+    </div>
+  </div>
+  <a routerLink="training" >Training</a>
+  
+  </div>
+  </div>
+
+
+
+
+
+
+<router-outlet></router-outlet>
